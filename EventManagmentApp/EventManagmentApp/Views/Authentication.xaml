@@ -1,0 +1,123 @@
+﻿<local:RoundedWindow x:Class="EventManagmentApp.Authentication"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EventManagmentApp"
+        mc:Ignorable="d"
+        Title="АИС Управление мероприятиями и событиями" 
+        MinHeight="850" MaxHeight="850" 
+        MinWidth="1400" MaxWidth="1400" 
+        WindowStartupLocation="CenterScreen" 
+        Icon="/img/holidays-party.png"
+        Background="{DynamicResource PanelBackgroundBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="NameAppRow" Height="150"/>
+            <RowDefinition x:Name="TitleRow" Height="130"/>
+            <RowDefinition x:Name="MainRow" Height="*"/>
+            <RowDefinition x:Name="FullNameAppRow" Height="150"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical" VerticalAlignment="Center" Margin="0,0,15,0">
+            <StackPanel Orientation="Horizontal" 
+                    Margin="15,0,0,15">
+                <TextBlock Text="Подключение к базе данных: " 
+                  Style="{StaticResource H3Text}"
+                  Foreground="{DynamicResource TextBrush}"
+                  VerticalAlignment="Center"/>
+                <TextBlock x:Name="tbDataBaseCon" 
+                    Text="{Binding CurrentUserRole}"
+                    Style="{StaticResource H1Text}"
+                    Foreground="{DynamicResource PrimaryBrush}"
+                    VerticalAlignment="Center"/>
+            </StackPanel>
+            <Border VerticalAlignment="Bottom">
+                <TextBlock 
+        Text="АИС Мероприятия" 
+        Style="{StaticResource MainText}"
+        Margin="10"
+        Foreground="{DynamicResource PrimaryBrush}"
+        FontWeight="ExtraBold"
+        HorizontalAlignment="Center"/>
+            </Border>
+        </StackPanel>
+
+        <Border Grid.Row="1" VerticalAlignment="Center">
+            <TextBlock 
+                Text="Войти в свой аккаунт" 
+                Style="{StaticResource MainText}"
+                Margin="10"
+                Foreground="{DynamicResource TextBrush}"
+                FontWeight="ExtraBold"
+                HorizontalAlignment="Center"/>
+        </Border>
+
+        <StackPanel Grid.Row="2" Orientation="Vertical" Margin="350 0">
+            <StackPanel Margin="0,0,0,50">
+                <TextBlock Text="Логин" 
+                   Style="{StaticResource H3Text}" 
+                   Margin="0,0,0,5" 
+                   Foreground="{DynamicResource SecondaryTextBrush}" 
+                   FontWeight="Medium"/>
+                <Border Style="{StaticResource TextBlockBorder}" Margin="10 0">
+                    <TextBox 
+                        x:Name="tbLogin"
+                        Style="{StaticResource InputBox}" 
+                        Padding="10"
+                        Background="White"
+                        Foreground="{DynamicResource DarkTextBrush}"/>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,50">
+                <TextBlock Text="Пароль" 
+                    Style="{StaticResource H3Text}" 
+                    Margin="0,0,0,5" 
+                    Foreground="{DynamicResource SecondaryTextBrush}" 
+                    FontWeight="Medium"/>
+                <StackPanel Margin="10 0">
+                    <Border Style="{StaticResource TextBlockBorder}">
+                        <PasswordBox
+                            x:Name="tbPassword"
+                            Style="{StaticResource InputPassBox}"
+                            Padding="10"
+                            Background="White"
+                            Foreground="{DynamicResource DarkTextBrush}"/>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,50">
+                <Border Grid.Row="2" 
+                        Style="{StaticResource ButtonBorder}" 
+                        Margin="20"
+                        Padding="10"
+                        HorizontalAlignment="Stretch">
+                    <StackPanel Orientation="Horizontal" Background="Transparent" HorizontalAlignment="Center">
+                        <Button x:Name="btnEnter" 
+                                Style="{StaticResource ButtonStyle}" 
+                                Content="Войти"
+                                Click="btnEnter_Click"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" VerticalAlignment="Top" Margin="3">
+            <Border>
+                <TextBlock 
+                        Text="Разработка структуры хранения информации для автоматизированной" 
+                        Style="{StaticResource H3Text}"
+                        Foreground="{DynamicResource TextBrush}"
+                        HorizontalAlignment="Center"/>
+            </Border>
+            <Border>
+                <TextBlock 
+                        Text="системы планирования и проведения мероприятий" 
+                        Style="{StaticResource H3Text}"
+                        Foreground="{DynamicResource TextBrush}"
+                        HorizontalAlignment="Center"/>
+            </Border>
+        </StackPanel>
+    </Grid>
+</local:RoundedWindow>

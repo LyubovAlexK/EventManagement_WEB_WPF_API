@@ -1,0 +1,143 @@
+﻿<local:RoundedWindow x:Class="EventManagmentApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:EventManagmentApp"
+        Title="АИС Управление мероприятиями и событиями" 
+        MinHeight="850" MaxHeight="850" 
+        MinWidth="1400" MaxWidth="1400" 
+        WindowStartupLocation="CenterScreen" 
+        Icon="/img/holidays-party.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="LeftColumn" Width="320"/>
+            <ColumnDefinition x:Name="CenterColumn" Width="*"/>
+            <ColumnDefinition x:Name="RightColumn" Width="0"/>
+        </Grid.ColumnDefinitions>
+        <Border x:Name="LeftMenuPanel" Grid.Column="0" Style="{StaticResource SidebarBorder}">
+            <StackPanel>
+                <StackPanel Margin="15,25">
+                    <StackPanel x:Name="BaseCatalog">
+                        <TextBlock 
+                                Text="АИС Мероприятия" 
+                                Style="{StaticResource H1TextSidedar}"
+                                Margin="10"
+                                HorizontalAlignment="Center"/>
+                        <TextBlock 
+                                Text="Базовый каталог" 
+                                Style="{StaticResource H3TextSidedar}"
+                                Margin="10"/>
+                        <Border x:Name="EventItem" Grid.Column="0" Style="{StaticResource SidebarBorder}" CornerRadius="30 0 30 0" Background="Transparent">
+                            <StackPanel Orientation="Horizontal" Background="Transparent" Margin="10">
+                                <Image x:Name="IconEvent"
+                                        Source="/img/eventWhite.png"
+                                        Style="{StaticResource IconImage}"/>
+                                <Button x:Name="btnEvent"
+                                        Style="{StaticResource SidebarButton}"
+                                        Content="События"
+                                        Click="BtnEvent_Click">
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                        <Border x:Name="CategoryItem" Grid.Column="0" Style="{StaticResource SidebarBorder}" CornerRadius="30 0 30 0" Background="Transparent">
+                            <StackPanel Orientation="Horizontal" Background="Transparent" Margin="10">
+                                <Image x:Name="IconCategory"
+                                        Source="/img/CategoryWhite.png"
+                                        Style="{StaticResource IconImage}"/>
+                                <Button x:Name="btnCategory"
+                                        Style="{StaticResource SidebarButton}"
+                                        Content="Категории событий" Click="btnCategory_Click"/>
+                            </StackPanel>
+                        </Border>
+                        <Border x:Name="VenueItem" Grid.Column="0" Style="{StaticResource SidebarBorder}" CornerRadius="30 0 30 0" Background="Transparent">
+                            <StackPanel Orientation="Horizontal" Background="Transparent" Margin="10">
+                                <Image x:Name="IconVenue"
+                                        Source="/img/mapWhite.png"
+                                        Style="{StaticResource IconImage}"/>
+                                <Button x:Name="btnVenues"
+                                        Style="{StaticResource SidebarButton}"
+                                        Content="Места проведения" Click="btnVenues_Click">
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                        <StackPanel x:Name="Profile">
+                            <TextBlock 
+                                    Text="Профиль" 
+                                    Style="{StaticResource H3TextSidedar}"
+                                    Margin="10"/>
+                            <Border x:Name="SettingsItem" Grid.Column="0" Style="{StaticResource SidebarBorder}" CornerRadius="30 0 30 0" Background="Transparent">
+                                <StackPanel Orientation="Horizontal" Background="Transparent" Margin="10">
+                                    <Image x:Name="IconSetting"
+                                            Source="/img/SettingWhite.png"
+                                            Style="{StaticResource IconImage}"/>
+                                    <Button x:Name="btnSettings"
+                                            Style="{StaticResource SidebarButton}"
+                                            Content="Настройки" Click="btnSettings_Click">
+                                    </Button>
+                                </StackPanel>
+                            </Border>
+                            <Border x:Name="ExitItem" Grid.Column="0" Style="{StaticResource SidebarBorder}" CornerRadius="30 0 30 0" Background="Transparent">
+                                <StackPanel Orientation="Horizontal" Background="Transparent" Margin="10">
+                                    <Image x:Name="IconExit"
+                                            Source="/img/LogoutWhite.png"
+                                            Style="{StaticResource IconImage}"/>
+                                    <Button x:Name="btnExit"
+                                            Style="{StaticResource SidebarButton}"
+                                            Content="Выход" Click="btnExit_Click">
+                                    </Button>
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel x:Name="ControlCenter">
+                        <TextBlock
+                                Text="Центр управления" 
+                                Style="{StaticResource H3TextSidedar}"
+                                Margin="10"/>
+                        <Border x:Name="ClientItem" Grid.Column="0" Style="{StaticResource SidebarBorder}" CornerRadius="30 0 30 0" Background="Transparent">
+                            <StackPanel Orientation="Horizontal" Background="Transparent" Margin="10">
+                                <Image x:Name="IconClient"
+                                        Source="/img/ClientsWhite.png"
+                                        Style="{StaticResource IconImage}"/>
+                                <Button x:Name="btnClient"
+                                        Style="{StaticResource SidebarButton}"
+                                        Content="Заказчики" Click="btnClient_Click">
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                        <Border x:Name="UserItem" Grid.Column="0" Style="{StaticResource SidebarBorder}" CornerRadius="30 0 30 0" Background="Transparent">
+                            <StackPanel Orientation="Horizontal" Background="Transparent" Margin="10">
+                                <Image x:Name="IconUser"
+                                        Source="/img/userSettingWhite.png"
+                                        Style="{StaticResource IconImage}"/>
+                                <Button x:Name="btnUser"
+                                        Style="{StaticResource SidebarButton}"
+                                        Content="Пользователи" Click="btnUser_Click">
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                        <Border x:Name="RoleItem" Grid.Column="0" Style="{StaticResource SidebarBorder}" CornerRadius="30 0 30 0" Background="Transparent">
+                            <StackPanel Orientation="Horizontal" Background="Transparent" Margin="10">
+                                <Image x:Name="IconRole"
+                                        Source="/img/RoleWhite.png"
+                                        Style="{StaticResource IconImage}"/>
+                                <Button x:Name="btnRole"
+                                        Style="{StaticResource SidebarButton}"
+                                        Content="Роли" Click="btnRole_Click">
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <local:AddEditPanel Grid.Column="2" x:Name="AddEditPanelControl" Margin="0,10,10,10" Visibility="Hidden"/>
+        <local:EventPanel Grid.Column="1" x:Name="EventsPanelControl" Margin="10" Visibility="Hidden"/>
+        <local:CategoryPanel Grid.Column="1" x:Name="CategoriesPanelControl" Margin="10" Visibility="Hidden"/>
+        <local:VenuesPanel Grid.Column="1" x:Name="VenuesPanelControl" Margin="10" Visibility="Hidden"/>
+        <local:ClientPanel Grid.Column="1" x:Name="ClientsPanelControl" Margin="10" Visibility="Hidden"/>
+        <local:UserPanel Grid.Column="1" x:Name="UsersPanelControl" Margin="10" Visibility="Hidden"/>
+        <local:RolePanel Grid.Column="1" x:Name="RolesPanelControl" Margin="10" Visibility="Hidden"/>
+        <local:SettingPanel Grid.Column="1" x:Name="SettingPanelControl" Margin="10" Visibility="Hidden"/>
+    </Grid>
+</local:RoundedWindow>

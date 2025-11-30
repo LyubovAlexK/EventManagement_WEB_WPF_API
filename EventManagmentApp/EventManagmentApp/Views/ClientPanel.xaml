@@ -1,0 +1,135 @@
+﻿<UserControl x:Class="EventManagmentApp.ClientPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EventManagmentApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Border x:Name="ClientsPanel" Grid.Column="1" Background="Transparent">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" Style="{StaticResource TextBlockBorder}" HorizontalAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/img/Search.png" Style="{StaticResource IconImage}"/>
+                        <TextBox x:Name="SearchBox" 
+                                 Style="{StaticResource SearchBox}"
+                                 TextChanged="SearchBox_TextChanged"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="1" Style="{StaticResource ButtonBorder}" HorizontalAlignment="Right" Margin="0">
+                    <StackPanel Orientation="Horizontal" Background="Transparent">
+                        <Button x:Name="btnAllRec" 
+                                Style="{StaticResource ButtonStyle}" 
+                                Content="Обновить данные"
+                                Click="btnAllRec_Click"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <Grid Grid.Row="1" Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Border>
+                        <StackPanel Orientation="Horizontal" Background="Transparent"/>
+                    </Border>
+                    <Border Style="{StaticResource ButtonBorder}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent">
+                            <Image Source="/img/plus.png" Style="{StaticResource IconImage}"/>
+                            <Button x:Name="btnAddNewRec"
+                                    Style="{StaticResource ButtonStyle}" 
+                                    Content="Добавить"
+                                    Click="AddNewRecord_Click"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource ButtonBorder}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent" Margin="10,0,10,0">
+                            <Image Source="/img/editl.png" Style="{StaticResource IconImage}"/>
+                            <Button x:Name="btnEditRec"
+                                    Style="{StaticResource ButtonStyle}" 
+                                    Content="Редактировать"
+                                    IsEnabled="{Binding IsClientSelected}"
+                                    Click="EditClient_Click"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource ButtonBorder}" Margin="0">
+                        <StackPanel Orientation="Horizontal" Background="Transparent">
+                            <Image Source="/img/trash.png" Style="{StaticResource IconImage}"/>
+                            <Button x:Name="btnDelRec"
+                                    Style="{StaticResource ButtonStyle}" 
+                                    Content="Удалить"
+                                    IsEnabled="{Binding IsClientSelected}"
+                                    Click="DeleteClient_Click"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+
+            <!-- DataGrid -->
+            <Border Grid.Row="2" 
+                    Style="{StaticResource DataGridBorder}"
+                    Margin="10">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <DataGrid x:Name="ClientsDataGrid"
+                              Style="{StaticResource CustomDataGridStyle}"
+                              AutoGenerateColumns="False"
+                              CanUserAddRows="False"
+                              SelectionMode="Single"
+                              IsReadOnly="True"
+                              ItemsSource="{Binding Clients}"
+                              SelectedItem="{Binding SelectedClient, Mode=TwoWay}"
+                              HorizontalScrollBarVisibility="Auto"
+                              VerticalScrollBarVisibility="Auto">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Код клиента" 
+                                                Binding="{Binding ClientId}"
+                                                Width="Auto"
+                                                HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Фамилия"
+                                                Binding="{Binding LastName}"
+                                                Width="Auto"
+                                                HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Имя"
+                                                Binding="{Binding Name}"
+                                                Width="Auto"
+                                                HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Отчество"
+                                                Binding="{Binding MiddleName}"
+                                                Width="Auto"
+                                                HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Email"
+                                                Binding="{Binding Email}"
+                                                Width="Auto"
+                                                HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Телефон"
+                                                Binding="{Binding Phone}"
+                                                Width="Auto"
+                                                HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Событие"
+                                                Binding="{Binding EventName}"
+                                                Width="Auto"
+                                                HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Border>
+</UserControl>

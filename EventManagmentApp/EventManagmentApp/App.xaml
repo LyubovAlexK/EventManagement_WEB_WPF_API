@@ -1,0 +1,17 @@
+﻿<Application x:Class="EventManagmentApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="/EventManagmentApp;component/Views/Authentication.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Цвета по умолчанию -->
+            <Color x:Key="PrimaryColor">#FF6F51FF</Color>
+            <Color x:Key="PrimaryColor40">#FFB1A1FF</Color>
+            <Color x:Key="PrimaryColor30">#FFE5E0FF</Color>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

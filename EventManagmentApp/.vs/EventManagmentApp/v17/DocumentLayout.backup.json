@@ -1,0 +1,362 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\addeditpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\addeditpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\venuespanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\venuespanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\authentication.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\authentication.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\authentication.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\authentication.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\db_panels\\eventspanelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\db_panels\\eventspanelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\eventpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\eventpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\venues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\venues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\db_panels\\categoriespanelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\db_panels\\categoriespanelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\zoomsettingpanel.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\zoomsettingpanel.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\db_panels\\clientspanelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\db_panels\\clientspanelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\clientpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\clientpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\settingpanel.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\settingpanel.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\settingpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\settingpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\categorypanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\categorypanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\zoomsettingpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\zoomsettingpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\sizemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\sizemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|d:\\diti\\\u0442\u0435\u0445\\ivanov_course_work\\trueproject\\eventmanagmentapp\\eventmanagmentapp\\themessettingpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4379CB07-3E6B-4341-AF70-4E6A1DF0C0E3}|EventManagmentApp\\EventManagmentApp.csproj|solutionrelative:eventmanagmentapp\\themessettingpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\Styles.xaml",
+              "RelativeDocumentMoniker": "EventManagmentApp\\Styles.xaml",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\Styles.xaml",
+              "RelativeToolTip": "EventManagmentApp\\Styles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T19:54:47.632Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VenuesPanel.xaml.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\VenuesPanel.xaml.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\VenuesPanel.xaml.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\VenuesPanel.xaml.cs",
+              "RelativeToolTip": "EventManagmentApp\\VenuesPanel.xaml.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAUwKwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T18:15:39.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\ApplicationContext.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\ApplicationContext.cs",
+              "RelativeToolTip": "EventManagmentApp\\ApplicationContext.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCAAAAC/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T14:25:20.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventsPanelViewModel.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\DB_Panels\\EventsPanelViewModel.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\DB_Panels\\EventsPanelViewModel.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\DB_Panels\\EventsPanelViewModel.cs",
+              "RelativeToolTip": "EventManagmentApp\\DB_Panels\\EventsPanelViewModel.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAApwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T07:34:00.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EventPanel.xaml.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\EventPanel.xaml.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\EventPanel.xaml.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\EventPanel.xaml.cs",
+              "RelativeToolTip": "EventManagmentApp\\EventPanel.xaml.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAEAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T07:33:55.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Venues.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\Venues.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\Venues.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\Venues.cs",
+              "RelativeToolTip": "EventManagmentApp\\Venues.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T06:54:17.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClientsPanelViewModel.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\DB_Panels\\ClientsPanelViewModel.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\DB_Panels\\ClientsPanelViewModel.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\DB_Panels\\ClientsPanelViewModel.cs",
+              "RelativeToolTip": "EventManagmentApp\\DB_Panels\\ClientsPanelViewModel.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAqwD8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:30:57.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClientPanel.xaml.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\ClientPanel.xaml.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\ClientPanel.xaml.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\ClientPanel.xaml.cs",
+              "RelativeToolTip": "EventManagmentApp\\ClientPanel.xaml.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwFcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:30:32.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\App.xaml",
+              "RelativeDocumentMoniker": "EventManagmentApp\\App.xaml",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\App.xaml",
+              "RelativeToolTip": "EventManagmentApp\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-25T12:23:57.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SettingPanel.xaml.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\SettingPanel.xaml.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\SettingPanel.xaml.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\SettingPanel.xaml.cs",
+              "RelativeToolTip": "EventManagmentApp\\SettingPanel.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T19:54:57.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Authentication.xaml.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\Authentication.xaml.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\Authentication.xaml.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\Authentication.xaml.cs",
+              "RelativeToolTip": "EventManagmentApp\\Authentication.xaml.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAwwFMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:12:44.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Authentication.xaml",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\Authentication.xaml",
+              "RelativeDocumentMoniker": "EventManagmentApp\\Authentication.xaml",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\Authentication.xaml",
+              "RelativeToolTip": "EventManagmentApp\\Authentication.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-25T12:13:00.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CategoryPanel.xaml.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\CategoryPanel.xaml.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\CategoryPanel.xaml.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\CategoryPanel.xaml.cs",
+              "RelativeToolTip": "EventManagmentApp\\CategoryPanel.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAA6wCsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:11:54.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoriesPanelViewModel.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\DB_Panels\\CategoriesPanelViewModel.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\DB_Panels\\CategoriesPanelViewModel.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\DB_Panels\\CategoriesPanelViewModel.cs",
+              "RelativeToolTip": "EventManagmentApp\\DB_Panels\\CategoriesPanelViewModel.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAqwDYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:11:47.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddEditPanel.xaml.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\AddEditPanel.xaml.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\AddEditPanel.xaml.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\AddEditPanel.xaml.cs",
+              "RelativeToolTip": "EventManagmentApp\\AddEditPanel.xaml.cs",
+              "ViewState": "AgIAADkEAAAAAAAAAAAtwEsEAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:09:40.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\App.xaml.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\App.xaml.cs",
+              "RelativeToolTip": "EventManagmentApp\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T20:15:41.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SizeManager.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\SizeManager.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\SizeManager.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\SizeManager.cs",
+              "RelativeToolTip": "EventManagmentApp\\SizeManager.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAUwHcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T20:15:20.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ZoomSettingPanel.xaml.cs",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\ZoomSettingPanel.xaml.cs",
+              "RelativeDocumentMoniker": "EventManagmentApp\\ZoomSettingPanel.xaml.cs",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\ZoomSettingPanel.xaml.cs",
+              "RelativeToolTip": "EventManagmentApp\\ZoomSettingPanel.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T20:14:36.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ThemesSettingPanel.xaml",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\ThemesSettingPanel.xaml",
+              "RelativeDocumentMoniker": "EventManagmentApp\\ThemesSettingPanel.xaml",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\ThemesSettingPanel.xaml",
+              "RelativeToolTip": "EventManagmentApp\\ThemesSettingPanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T19:57:34.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ZoomSettingPanel.xaml",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\ZoomSettingPanel.xaml",
+              "RelativeDocumentMoniker": "EventManagmentApp\\ZoomSettingPanel.xaml",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\ZoomSettingPanel.xaml",
+              "RelativeToolTip": "EventManagmentApp\\ZoomSettingPanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T19:56:58.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SettingPanel.xaml",
+              "DocumentMoniker": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\SettingPanel.xaml",
+              "RelativeDocumentMoniker": "EventManagmentApp\\SettingPanel.xaml",
+              "ToolTip": "D:\\DITI\\\u0442\u0435\u0445\\Ivanov_course_work\\trueProject\\EventManagmentApp\\EventManagmentApp\\SettingPanel.xaml",
+              "RelativeToolTip": "EventManagmentApp\\SettingPanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T19:54:51.706Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

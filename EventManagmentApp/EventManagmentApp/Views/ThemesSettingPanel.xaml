@@ -1,0 +1,126 @@
+﻿<UserControl x:Class="EventManagmentApp.ThemesSettingPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EventManagmentApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Grid.Row="0"
+                   Text="Выберите цветовую тему"
+                   Style="{StaticResource H1Text}"
+                   Foreground="#1E293B"
+                   Margin="0,0,0,30"/>
+
+        <!-- Выбор цвета -->
+        <Grid Grid.Row="1" Margin="0,0,0,40">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0"
+                       Text="Цвет"
+                       Style="{StaticResource H2Text}"
+                       Foreground="#1E293B"
+                       VerticalAlignment="Center"/>
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                <!-- PURPLE -->
+                <CheckBox x:Name="PurpleThemeCheckBox"
+                          Style="{StaticResource ColorThemeCheckBox}"
+                          Tag="Purple"
+                          Background="#A855F7"
+                          Checked="ColorTheme_Checked"
+                          Margin="0,0,10,0"
+                          IsChecked="True"/>
+
+                <!-- YELLOW -->
+                <CheckBox x:Name="YellowThemeCheckBox"
+                          Style="{StaticResource ColorThemeCheckBox}"
+                          Tag="Yellow"
+                          Background="#F59E0B"
+                          Checked="ColorTheme_Checked"
+                          Margin="0,0,10,0"/>
+
+                <!-- RED -->
+                <CheckBox x:Name="RedThemeCheckBox"
+                          Style="{StaticResource ColorThemeCheckBox}"
+                          Tag="Red"
+                          Background="#F43F5E"
+                          Checked="ColorTheme_Checked"
+                          Margin="0,0,10,0"/>
+
+                <!-- GREEN -->
+                <CheckBox x:Name="GreenThemeCheckBox"
+                          Style="{StaticResource ColorThemeCheckBox}"
+                          Tag="Green"
+                          Background="#22C55E"
+                          Checked="ColorTheme_Checked"
+                          Margin="0,0,10,0"/>
+
+                <!-- BLUE -->
+                <CheckBox x:Name="BlueThemeCheckBox"
+                          Style="{StaticResource ColorThemeCheckBox}"
+                          Tag="Blue"
+                          Background="#3B82F6"
+                          Checked="ColorTheme_Checked"
+                          Margin="0,0,10,0"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Выбор темы -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0"
+                       Text="Тема"
+                       Style="{StaticResource H2Text}"
+                       Foreground="#1E293B"
+                       VerticalAlignment="Center"/>
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                <!-- Темная тема -->
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,30,0">
+                    <TextBlock Text="Темная тема"
+                               Style="{StaticResource H3Text}"
+                               Foreground="#1E293B"
+                               VerticalAlignment="Center"
+                               Margin="0,0,10,0"/>
+                    <ToggleButton x:Name="DarkThemeToggle"
+                                  Style="{StaticResource SettingToggleButton}"
+                                  Checked="ThemeToggle_Checked"
+                                  Unchecked="ThemeToggle_Checked"/>
+                </StackPanel>
+
+                <!-- Светлая тема -->
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="Светлая тема"
+                               Style="{StaticResource H3Text}"
+                               Foreground="#1E293B"
+                               VerticalAlignment="Center"
+                               Margin="0,0,10,0"/>
+                    <ToggleButton x:Name="LightThemeToggle"
+                                  Style="{StaticResource SettingToggleButton}"
+                                  Checked="ThemeToggle_Checked"
+                                  Unchecked="ThemeToggle_Checked"
+                                  IsChecked="True"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,256 @@
+﻿<UserControl x:Class="EventManagmentApp.EventPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EventManagmentApp"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+<UserControl.Resources>
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+</UserControl.Resources>
+    
+    <Border x:Name="EventsPanel" Grid.Column="1" Background="Transparent">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" Style="{StaticResource TextBlockBorder}" HorizontalAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/img/Search.png" Style="{StaticResource IconImage}"/>
+                        <TextBox x:Name="SearchBox" Style="{StaticResource SearchBox}"
+                     TextChanged="SearchBox_TextChanged"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="1" Style="{StaticResource ButtonBorder}" HorizontalAlignment="Right" Margin="0">
+                    <StackPanel Orientation="Horizontal" Background="Transparent">
+                        <Button x:Name="btnAllRec" 
+                                Style="{StaticResource ButtonStyle}" 
+                                Content="Обновить данные"
+                                Click="btnAllRec_Click"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <Grid Grid.Row="1" Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Border x:Name="StatusFilterContainer" Style="{StaticResource TextBlockBorder}">
+                        <StackPanel x:Name="StatusFilter" Orientation="Horizontal">
+                            <Button x:Name="btnStatusFilter" Style="{StaticResource FilterButton}" Content="Статус"/>
+                            <Image x:Name="ArowStatusFilter"
+                                   Style="{StaticResource IconImage}"
+                                   Source="/img/ArowDown.png"/>
+                        </StackPanel>
+                    </Border>
+                    <Border x:Name="BudgetFilterContainer" Style="{StaticResource TextBlockBorder}">
+                        <StackPanel x:Name="BudgetFilter" Orientation="Horizontal">
+                            <Button x:Name="btnBudgetFilter" Style="{StaticResource FilterButton}" Content="Бюджет"/>
+                            <Image x:Name="ArowBudgetFilter" Style="{StaticResource IconImage}"
+                                Source="/img/ArowDown.png"/>
+                        </StackPanel>
+                    </Border>
+                    <Border x:Name="CountGuestsFilterContainer" Style="{StaticResource TextBlockBorder}">
+                        <StackPanel x:Name="CountGuestsFilter" Orientation="Horizontal">
+                            <Button x:Name="btnCountGuestsFilter" Style="{StaticResource FilterButton}" Content="Количество гостей"/>
+                            <Image x:Name="ArowCountGuestsFilter"
+                                Style="{StaticResource IconImage}"
+                                Source="/img/ArowDown.png"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Border>
+                        <StackPanel Orientation="Horizontal" Background="Transparent"/>
+                    </Border>
+                    <Border Style="{StaticResource ButtonBorder}"
+                            Visibility="{Binding IsAdmin, Converter={StaticResource BooleanToVisibilityConverter}}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent">
+                            <Image Style="{StaticResource IconImage}" Source="/img/plus.png"/>
+                            <Button x:Name="btnAddNewRec"
+                                    Style="{StaticResource ButtonStyle}"
+                                    Content="Добавить"
+                                    Click="AddNewRecord_Click"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource ButtonBorder}" x:Name="btnEdit">
+                        <StackPanel Orientation="Horizontal" Background="Transparent">
+                            <Image Style="{StaticResource IconImage}" Source="/img/editl.png"/>
+                            <Button x:Name="btnEditRec"
+                                    Style="{StaticResource ButtonStyle}"
+                                    IsEnabled="{Binding IsEventSelected}"
+                                    Content="Редактировать"
+                                    Click="EditEvent_Click"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource ButtonBorder}" 
+                            Margin="0"
+                            Visibility="{Binding IsAdmin, Converter={StaticResource BooleanToVisibilityConverter}}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent">
+                            <Image Style="{StaticResource IconImage}" Source="/img/trash.png"/>
+                            <Button x:Name="btnDelRec"
+                                    Style="{StaticResource ButtonStyle}"
+                                    IsEnabled="{Binding IsEventSelected}"
+                                    Content="Удалить"
+                                    Click="DeleteEvent_Click"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+
+            <!-- DataGrid в Grid.Row="2" -->
+            <Border Grid.Row="2"
+                    Style="{StaticResource DataGridBorder}"
+                    Margin="10" 
+                    x:Name="DataGridContainer"
+                    Panel.ZIndex="0">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <DataGrid x:Name="EventsDataGrid"
+                              Style="{StaticResource CustomDataGridStyle}"
+                              AutoGenerateColumns="False"
+                              CanUserAddRows="False"
+                              SelectionMode="Single"
+                              IsReadOnly="True"
+                              ItemsSource="{Binding Events}"
+                              SelectedItem="{Binding SelectedEvent, Mode=TwoWay}"
+                              HorizontalScrollBarVisibility="Auto"
+                              VerticalScrollBarVisibility="Auto">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Код события" Binding="{Binding EventId}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Название события" Binding="{Binding EventName}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Описание" Binding="{Binding Description}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Дата и время начала" Binding="{Binding DateTimeStart, StringFormat={}{0:dd.MM.yyyy HH:mm}}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Дата и время окончания" Binding="{Binding DateTimeFinish, StringFormat={}{0:dd.MM.yyyy HH:mm}}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Категория" Binding="{Binding CategoryName}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Место проведения" Binding="{Binding VenueName}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Пользователь" Binding="{Binding UserName}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Клиенты" Binding="{Binding ClientsDisplay}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Предполагаемый бюджет" Binding="{Binding EstimatedBudget, StringFormat={}{0:N0} ₽}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Максимальное кол-во гостей" Binding="{Binding MaxNumOfGuests}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                            <DataGridTextColumn Header="Реальный бюджет" Binding="{Binding ActualBudget, StringFormat={}{0:N0} ₽}" Width="Auto" CanUserSort="True" HeaderStyle="{StaticResource HeaderWithIconStyle}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </ScrollViewer>
+            </Border>
+
+            <!-- Контейнеры фильтров поверх DataGrid -->
+            <Canvas Grid.Row="2" Panel.ZIndex="100">
+                <Border x:Name="MenuStatusFilterContainer"
+                        Style="{StaticResource TextBlockBorder}" 
+                        Canvas.Left="10"
+                        Canvas.Top="10"
+                        Visibility="Hidden">
+                    <StackPanel x:Name="MenuStatusFilter" 
+                            Orientation="Vertical">
+                        <CheckBox x:Name="ChbAgreed" Style="{StaticResource CheckBoxStyle}" Content="Согласован"
+                                  Checked="StatusCheckBox_Checked" Unchecked="StatusCheckBox_Unchecked"/>
+                        <CheckBox x:Name="ChbInProcessing" Style="{StaticResource CheckBoxStyle}" Content="В обработке"
+                                  Checked="StatusCheckBox_Checked" Unchecked="StatusCheckBox_Unchecked"/>
+                        <CheckBox x:Name="ChbAwaitingApproval" Style="{StaticResource CheckBoxStyle}" Content="Ждет утверждения"
+                                  Checked="StatusCheckBox_Checked" Unchecked="StatusCheckBox_Unchecked"/>
+                    </StackPanel>
+                </Border>
+
+                <Border x:Name="MenuBudgetFilterContainer"
+                        Style="{StaticResource TextBlockBorder}" 
+                        Canvas.Left="160"
+                        Canvas.Top="10"
+                        Visibility="Hidden">
+                    <Grid x:Name="MenuBudgetFilter">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" 
+                                Style="{StaticResource FilterBlock}" Text="От" 
+                                Padding="5" VerticalAlignment="Center" Margin="0,0,10,5"/>
+                        <TextBlock Grid.Row="0" Grid.Column="1" 
+                                Style="{StaticResource FilterBlock}" Text="До" 
+                                Padding="5" VerticalAlignment="Center" Margin="0,0,0,5"/>
+
+                        <Border Grid.Row="1" Grid.Column="0" 
+                                Style="{StaticResource TextBlockBorder}" 
+                                Margin="0,0,10,10">
+                            <TextBox x:Name="StartBudgetFilter" Style="{StaticResource InputBox}" Width="80"/>
+                        </Border>
+                        <Border Grid.Row="1" Grid.Column="1" 
+                                Style="{StaticResource TextBlockBorder}" 
+                                Margin="0,0,0,10">
+                            <TextBox x:Name="FinishBudgetFilter" Style="{StaticResource InputBox}" Width="80"/>
+                        </Border>
+                        <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
+                                Style="{StaticResource ButtonBorder}" 
+                                HorizontalAlignment="Center">
+                            <Button Style="{StaticResource ButtonStyle}" Content="Применить"
+                                    Click="ApplyBudgetFilter_Click"/>
+                        </Border>
+                    </Grid>
+                </Border>
+
+                <Border x:Name="MenuCountGuestsFilterContainer"
+                        Style="{StaticResource TextBlockBorder}" 
+                        Canvas.Left="310"
+                        Canvas.Top="10"
+                        Visibility="Hidden">
+                    <Grid x:Name="MenuGuestsFilter">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" 
+                                Style="{StaticResource FilterBlock}" Text="От" 
+                                Padding="5" VerticalAlignment="Center" Margin="0,0,10,5"/>
+                        <TextBlock Grid.Row="0" Grid.Column="1" 
+                                Style="{StaticResource FilterBlock}" Text="До" 
+                                Padding="5" VerticalAlignment="Center" Margin="0,0,0,5"/>
+
+                        <Border Grid.Row="1" Grid.Column="0" 
+                                Style="{StaticResource TextBlockBorder}" 
+                                Margin="0,0,10,10">
+                            <TextBox x:Name="StartGuestsFilter" Style="{StaticResource InputBox}" Width="80"/>
+                        </Border>
+                        <Border Grid.Row="1" Grid.Column="1" 
+                                Style="{StaticResource TextBlockBorder}" 
+                                Margin="0,0,0,10">
+                            <TextBox x:Name="FinishGuestsFilter" Style="{StaticResource InputBox}" Width="80"/>
+                        </Border>
+                        <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
+                                Style="{StaticResource ButtonBorder}"
+                                HorizontalAlignment="Center">
+                            <Button Style="{StaticResource ButtonStyle}" Content="Применить"
+                                    Click="ApplyGuestsFilter_Click"/>
+                        </Border>
+                    </Grid>
+                </Border>
+            </Canvas>
+        </Grid>
+    </Border>
+</UserControl>

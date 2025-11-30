@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="EventManagmentApp.AddEditPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EventManagmentApp"
+             mc:Ignorable="d"
+             d:DesignHeight="850" d:DesignWidth="300"
+             x:Name="AddEditPanelControl">
+
+    <Border Background="White" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="8,0,0,8">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Margin="20,15,15,15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock x:Name="HeaderTextBlock"
+                           Grid.Column="0"
+                           Text="Редактирование события" 
+                           Style="{StaticResource H1Text}" 
+                           Foreground="#1E293B" 
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"/>
+
+                <Button Grid.Column="1"
+                        x:Name="CloseButton"
+                        Style="{StaticResource IconButtonStyle}"
+                        ToolTip="Закрыть"
+                        Command="{Binding ClosePanelCommand, RelativeSource={RelativeSource AncestorType=UserControl}}">
+                    <Image Source="/img/close.png"
+                           Style="{StaticResource IconButton}"/>
+                </Button>
+            </Grid>
+
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Padding="20,0,20,0" 
+                          x:Name="FormScrollViewer">
+                <StackPanel x:Name="MainFormStackPanel" Orientation="Vertical">
+                    <!-- Поля будут генерироваться динамически -->
+                </StackPanel>
+            </ScrollViewer>
+
+            <Border Grid.Row="2" 
+                    Style="{StaticResource ButtonBorder}" 
+                    Margin="20" 
+                    HorizontalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal" Background="Transparent" HorizontalAlignment="Center">
+                    <Button x:Name="btnAddEdit" 
+                            Style="{StaticResource ButtonStyle}" 
+                            Content="Изменить"
+                            Click="btnAddEdit_Click"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+</UserControl>
